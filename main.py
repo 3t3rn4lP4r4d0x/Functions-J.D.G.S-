@@ -1,5 +1,19 @@
 import matplotlib.pyplot as plt
-plt.plot([1,2,3,4])
+  
+  
+plt.plot([0,1,2,4,5], [0,2,4,10,8],"b^-")
 plt.ylabel('some numbers')
-plt.show()
+# plt.show()
+plt.savefig('function.jpg')
+
+
+
+
+
+
+
+
+
+
+
 
