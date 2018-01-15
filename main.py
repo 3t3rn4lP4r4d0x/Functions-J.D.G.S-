@@ -1,8 +1,19 @@
 import matplotlib.pyplot as plt
 #esto deja que puedas poner los maximos  minimos valors del axis de valores
+
 xmin=int(input("valor minim de x?"))
 xmax=int(input("valor maxim de x?"))
-#plt.axis([xmin,xmax,ymin,ymax]) no hace falta plt.axis ya que te lo hace solo con lo de plot.
-plt.plot([0,1,2,3,4], [0,2,4,8,10], "-ro")
+# func = input("funcio")
+xarray = []
+yarray = []
+x = xmin
+while x <= xmax:
+  xarray.append(x)
+#  y = eval(func)
+  y = x**2 - 3*x
+  print ("x = {0:5.2f}  y = {1:5.2f}".format(x,y))
+  yarray.append(y)
+  x = x + 0.1
+plt.plot(xarray, yarray, "-ro")
 plt.ylabel('Grafic de funcions')
 plt.savefig('graph.jpg')
