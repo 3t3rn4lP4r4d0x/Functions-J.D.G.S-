@@ -3,17 +3,27 @@ import matplotlib.pyplot as plt
 
 xmin=int(input("valor minim de x?"))
 xmax=int(input("valor maxim de x?"))
-# func = input("funcio")
+func = input("funcio")
 xarray = []
 yarray = []
 x = xmin
 while x <= xmax:
   xarray.append(x)
-#  y = eval(func)
-  y = x**2 - 3*x
+  y = eval(func)
+#  y = x**2 - 3*x
   print ("x = {0:5.2f}  y = {1:5.2f}".format(x,y))
   yarray.append(y)
   x = x + 0.1
 plt.plot(xarray, yarray, "-ro")
 plt.ylabel('Grafic de funcions')
 plt.savefig('graph.jpg')
+def cutx ():
+  if y > xmin:
+    print ('Aquesta funció talla per eix x.')
+  else:
+    print ('Aquesta funció no talla per eix x.')
+    
+    
+    
+    
+cutx ()
