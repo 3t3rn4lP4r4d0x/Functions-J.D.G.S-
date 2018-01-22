@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 xmin=int(input("valor minim de x?"))
 xmax=int(input("valor maxim de x?"))
-func = input("funcio (sense ^!)")
+func = input("funcio")
 xarray = []
 yarray = []
 x = xmin
@@ -18,7 +18,7 @@ plt.plot(xarray, yarray, "-ro")
 plt.ylabel('Grafic de funcions')
 plt.savefig('graph.jpg')
 def cutx ():
-  if y < xmin:
+  if y < xmin or y > xmax:
     print ('Aquesta funció talla per eix x.')
   else:
     print ('Aquesta funció no talla per eix x.')
