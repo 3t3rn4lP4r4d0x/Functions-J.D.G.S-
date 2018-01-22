@@ -18,11 +18,11 @@ plt.plot(xarray, yarray, "-ro")
 plt.ylabel('Grafic de funcions')
 plt.savefig('graph.jpg')
 def cutx ():
-  if y < xmin or y > xmax:
+  if xmin > y  or y > xmax:
     print ('Aquesta funció talla per eix x.')
   else:
     print ('Aquesta funció no talla per eix x.')
-    
+     
     
     
     
