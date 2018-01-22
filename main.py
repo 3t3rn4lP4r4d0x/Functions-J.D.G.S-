@@ -14,6 +14,8 @@ while x <= xmax:
   print ("x = {0:5.2f}  y = {1:5.2f}".format(x,y))
   yarray.append(y)
   x = x + 0.1
+plt.axhline(0)
+plt.axvline(0)
 plt.plot(xarray, yarray, "-ro")
 plt.ylabel('Grafic de funcions')
 plt.savefig('graph.jpg')
